@@ -1,22 +1,116 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+//Programa de cartas de super trunfo
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+	
+	printf("--Super trunfo--\n");
+	
+	int quantidadeCard,card,populacao,pontoTuristicos;
+	char estado[50], cod[10],nomeCidade[50];
+	double aria,pib;
+		
+	/*
+	Essa são as entrada de dados para os cardes
+	do super trunfo.
+	*/
+		
+	printf("Digite o numero do card:\n");
+	scanf("%d",&quantidadeCard);
+	
+	getchar();//Esse comando ajuda a limpar a memoria para não cair em um buffer.
+	
+		
+	printf("Digite o estado:\n");
+	fgets(estado,sizeof(estado),stdin);
+		
+	printf("Digite o cod:\n");
+	fgets(cod, sizeof(cod), stdin);
+		
+	printf("Digite o nome da cidade \n");
+	fgets(nomeCidade,sizeof(nomeCidade),stdin);
+		
+	printf("Digite o numero de habitantes: \n");
+	scanf("%d",&populacao);
+		
+	printf("Digite a aria total: \n");
+	scanf("%lf",&aria);
+		
+	printf("Digite o PIB:\n");
+	scanf("%lf",&pib);
+		
+	printf("Digite a quantidade de pontos turisticos:\n");
+	scanf("%d",&pontoTuristicos);
+	/*
+	Aqui é a síada de dado das cartas do super trunfo,
+	todos os dados é aprensentado na tela.
+	*/
+	printf("----------------\n");
+	printf("Card: %d\n",quantidadeCard);
+	printf("Estado:%s",estado);
+	printf("Cod: %s",cod);
+	printf("Nome da cidade: %s",nomeCidade);
+	printf("Populacao: %d\n",populacao);
+	printf("Aria: %.2f km2 \n", aria);
+	printf("PIB: %.2f bilhos de reais\n",pib);
+	printf("Pontos Turisticos: %d\n",pontoTuristicos);
+	printf("-----------------\n");
+	
+	/*
+	Essa é a segundo card, aqui tem os mesmo funcionamento
+	da comandos anteriores.
+	*/
+	printf("--Super trunfo--\n");
+	
+	int quantidadeCard,card,populacao,pontoTuristicos;
+	char estado[50], cod[10],nomeCidade[50];
+	double aria,pib;
+		
+	/*
+	Essa são as entrada de dados para os cardes
+	do super trunfo.
+	*/
+		
+	printf("Digite o numero do card:\n");
+	scanf("%d",&quantidadeCard);
+	
+	getchar();//Esse comando ajuda a limpar a memoria para não cair em um buffer.
+	
+		
+	printf("Digite o estado:\n");
+	fgets(estado,sizeof(estado),stdin);
+		
+	printf("Digite o cod:\n");
+	fgets(cod, sizeof(cod), stdin);
+		
+	printf("Digite o nome da cidade \n");
+	fgets(nomeCidade,sizeof(nomeCidade),stdin);
+		
+	printf("Digite o numero de habitantes: \n");
+	scanf("%d",&populacao);
+		
+	printf("Digite a aria total: \n");
+	scanf("%lf",&aria);
+		
+	printf("Digite o PIB:\n");
+	scanf("%lf",&pib);
+		
+	printf("Digite a quantidade de pontos turisticos:\n");
+	scanf("%d",&pontoTuristicos);
+	/*
+	Aqui é a síada de dado das cartas do super trunfo,
+	todos os dados é aprensentado na tela.
+	*/
+	printf("----------------\n");
+	printf("Card: %d\n",quantidadeCard);
+	printf("Estado:%s",estado);
+	printf("Cod: %s",cod);
+	printf("Nome da cidade: %s",nomeCidade);
+	printf("Populacao: %d\n",populacao);
+	printf("Aria: %.2f km2 \n", aria);
+	printf("PIB: %.2f bilhos de reais\n",pib);
+	printf("Pontos Turisticos: %d\n",pontoTuristicos);
+	printf("-----------------\n");
 
-    return 0;
+	return 0;
 }
